@@ -117,3 +117,11 @@ TEST(TicTacToeBoardTest, GetPieceFirst)
   t.placePiece(0, 0);
 	ASSERT_EQ(t.getPiece(0, 0), X);
 }
+
+TEST(TicTacToeBoardTest, GetPieceSecond)
+{
+  TicTacToeBoard t;
+  t.placePiece(0, 0);
+  t.placePiece(0, 1);
+	ASSERT_EQ(t.getPiece(0, 1), O);
+}
