@@ -52,14 +52,14 @@ TEST(TicTacToeBoardTest, PlaceOnePiece)
 TEST(TicTacToeBoardTest, PlaceTwoPieces)
 {
   TicTacToeBoard t;
-  t.placePiece(0,0)
+  t.placePiece(0,0);
   ASSERT_EQ(t.placePiece(0, 1), O);
 }
 
 TEST(TicTacToeBoardTest, PlacePieceSamePlace)
 {
   TicTacToeBoard t;
-  t.placePiece(0,0)
+  t.placePiece(0,0);
 	ASSERT_EQ(t.placePiece(0, 0), X);
 }
 
