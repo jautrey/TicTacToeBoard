@@ -74,3 +74,46 @@ TEST(TicTacToeBoardTest, PlacePieceRowInvalid)
   TicTacToeBoard t;
 	ASSERT_EQ(t.placePiece(3, 0), Invalid);
 }
+
+TEST(TicTacToeBoardTest, PlacePieceRowNegative)
+{
+  TicTacToeBoard t;
+	ASSERT_EQ(t.placePiece(-1, 0), Invalid);
+}
+
+TEST(TicTacToeBoardTest, PlacePieceColumnNegative)
+{
+  TicTacToeBoard t;
+	ASSERT_EQ(t.placePiece(0, -1), Invalid);
+}
+
+TEST(TicTacToeBoardTest, GetPieceColumnInvalid)
+{
+  TicTacToeBoard t;
+	ASSERT_EQ(t.getPiece(0, 3), Invalid);
+}
+
+TEST(TicTacToeBoardTest, GetPieceRowInvalid)
+{
+  TicTacToeBoard t;
+	ASSERT_EQ(t.getPiece(3, 0), Invalid);
+}
+
+TEST(TicTacToeBoardTest, GetPieceRowNegative)
+{
+  TicTacToeBoard t;
+	ASSERT_EQ(t.getPiece(-1, 0), Invalid);
+}
+
+TEST(TicTacToeBoardTest, GetPieceColumnNegative)
+{
+  TicTacToeBoard t;
+	ASSERT_EQ(t.getPiece(0, -1), Invalid);
+}
+
+TEST(TicTacToeBoardTest, GetPieceFirst)
+{
+  TicTacToeBoard t;
+  t.placePiece(0, 0)
+	ASSERT_EQ(t.getPiece(0, 0), X);
+}
