@@ -166,7 +166,7 @@ TEST(TicTacToeBoardTest, WinnerDiagonal)
 	ASSERT_EQ(t.getWinner(), X);
 }
 
-TEST(TicTacToeBoardTest, WinnerDiagonal)
+TEST(TicTacToeBoardTest, WinnerOtherDiagonal)
 {
   TicTacToeBoard t;
   t.placePiece(0, 2);
