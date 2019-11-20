@@ -200,5 +200,5 @@ TEST(TicTacToeBoardTest, Draw)
   t.placePiece(2, 1);
   t.placePiece(1, 0);
   t.placePiece(1, 2);
-	ASSERT_EQ(t.getWinner, Blank);
+	ASSERT_EQ(t.getWinner(), Blank);
 }
