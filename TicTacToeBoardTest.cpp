@@ -114,6 +114,6 @@ TEST(TicTacToeBoardTest, GetPieceColumnNegative)
 TEST(TicTacToeBoardTest, GetPieceFirst)
 {
   TicTacToeBoard t;
-  t.placePiece(0, 0)
+  t.placePiece(0, 0);
 	ASSERT_EQ(t.getPiece(0, 0), X);
 }
