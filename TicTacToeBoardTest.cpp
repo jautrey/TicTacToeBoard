@@ -125,3 +125,20 @@ TEST(TicTacToeBoardTest, GetPieceSecond)
   t.placePiece(0, 1);
 	ASSERT_EQ(t.getPiece(0, 1), O);
 }
+
+TEST(TicTacToeBoardTest, WinnerRowZero)
+{
+  TicTacToeBoard t;
+  t.placePiece(0, 0);
+  t.placePiece(1, 1);
+  t.placePiece(0, 1);
+  t.placePiece(1, 1);
+  t.placePiece(0, 2);
+	ASSERT_EQ(t.getWinner(), X);
+}
+
+TEST(TicTacToeBoardTest, NoWinner)
+{
+  TicTacToeBoard t;
+	ASSERT_EQ(t.getWinner(), Invalid);
+}
