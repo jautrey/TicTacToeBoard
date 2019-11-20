@@ -46,5 +46,5 @@ TEST(TicTacToeBoardTest, toggleTurnThree)
 TEST(TicTacToeBoardTest, PlaceOnePiece)
 {
   TicTacToeBoard t;
-	ASSERT_EQ(t.placePiece(), X);
+	ASSERT_EQ(t.placePiece(0, 0), X);
 }
