@@ -48,3 +48,29 @@ TEST(TicTacToeBoardTest, PlaceOnePiece)
   TicTacToeBoard t;
 	ASSERT_EQ(t.placePiece(0, 0), X);
 }
+
+TEST(TicTacToeBoardTest, PlaceTwoPieces)
+{
+  TicTacToeBoard t;
+  t.placePiece(0,0)
+  ASSERT_EQ(t.placePiece(0, 1), O);
+}
+
+TEST(TicTacToeBoardTest, PlacePieceSamePlace)
+{
+  TicTacToeBoard t;
+  t.placePiece(0,0)
+	ASSERT_EQ(t.placePiece(0, 0), X);
+}
+
+TEST(TicTacToeBoardTest, PlacePieceColumnInvalid)
+{
+  TicTacToeBoard t;
+	ASSERT_EQ(t.placePiece(0, 3), Invalid);
+}
+
+TEST(TicTacToeBoardTest, PlacePieceRowInvalid)
+{
+  TicTacToeBoard t;
+	ASSERT_EQ(t.placePiece(3, 0), Invalid);
+}
