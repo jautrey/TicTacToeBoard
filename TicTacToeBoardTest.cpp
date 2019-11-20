@@ -187,3 +187,18 @@ TEST(TicTacToeBoardTest, GameOverPlacePieceInvalid)
   t.placePiece(2, 0);
 	ASSERT_EQ(t.placePiece(2, 1), Invalid);
 }
+
+TEST(TicTacToeBoardTest, Draw)
+{
+  TicTacToeBoard t;
+  t.placePiece(1, 1);
+  t.placePiece(0, 0);
+  t.placePiece(2, 0);
+  t.placePiece(0, 2);
+  t.placePiece(0, 1);
+  t.placePiece(2, 2);
+  t.placePiece(2, 1);
+  t.placePiece(1, 0);
+  t.placePiece(1, 2);
+	ASSERT_EQ(t.getWinner, Blank);
+}
