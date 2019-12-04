@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/jautrey/TicTacToeBoard.svg?branch=master)](https://travis-ci.org/jautrey/TicTacToeBoard)
+
+[![Coverage Status](https://coveralls.io/repos/github/jautrey/TicTacToeBoard/badge.svg?branch=master)](https://coveralls.io/github/jautrey/TicTacToeBoard?branch=master)
+
 # TicTacToeBoard
 
 ## Associated Enumerated Types
